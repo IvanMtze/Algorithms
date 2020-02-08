@@ -87,4 +87,13 @@ public class SequentialSearchST<Key, Value> implements Iterable<Key>{
         return queue.iterator();
     }
     
+    
+    public Iterable<Key> keys()  {
+        Queue<Key> queue = new Queue<Key>();
+        for (Node x = first; x != null; x = x.next)
+            queue.enqueue(x.key);
+        return queue;
+    }
+
+    
 }

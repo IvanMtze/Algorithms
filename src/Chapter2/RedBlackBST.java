@@ -362,7 +362,7 @@ public class RedBlackBST<Key extends Comparable, Value> {
 
         root = deleteMax(root);
         if (!isEmpty()) root.color = BLACK;
-    }
+    }   
 
     private Node deleteMax(Node h) { 
         if (isRed(h.left))
